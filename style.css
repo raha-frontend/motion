@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Bariol, sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: 1px solid #fff;
+}
+
+.main-header {
+    background-color: #f56262;    
+}
+
+.header-inner {
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome {
+    background-color: #eb4f4e;
+}
+
+.welcom-inner {
+    height: 635px;
+}
+
+.smart-creative {
+    background-color: #232324;
+}
+
+.smart-creative-inner {
+    height: 369px;
+}
+
+.talented {
+    background-color: #6cc372;
+}
+
+.talented-inner {
+    height: 515px;
+}
+
+.elegant {
+    background-color: #f0f0f0;
+}
+
+.elegant-inner {
+    height: 557px;
+}
+
+.tarife {
+    background-color: #fff;
+}
+
+.tarife-inner {
+    height: 373px;
+}
+
+.tweets {
+    background-color: #eb4f4e;
+}
+
+.tweets-inner {
+    height: 275px;
+}
+
+.copyright {
+    background-color: #232324;
+}
+
+.copyright-inner {
+    height: 48px;
+}
+
+.contacts {
+    position: relative;
+}
+
+.contacts-inner {
+    width: 615px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0,0,0, 0.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    text-align: center;
+    color: #eb4f4e;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 44px;
+}
+
+.contacts-inner h3 {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+  
+.contacts-inner p {
+    font-size: 20px;
+}
