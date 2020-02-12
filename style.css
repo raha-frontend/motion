@@ -19,7 +19,19 @@ body {
 }
 
 .main-header {
-    background-color: #f56262;    
+    background-color: #f56262;
+    position: relative;
+}
+
+.main-header::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 64px;
+    height: 121px;
+    background-image: url(./images/header-icon.png);
+    background-repeat: no-repeat;
 }
 
 .header-inner {
@@ -29,11 +41,38 @@ body {
     align-items: center;
 }
 
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-item {
+    margin-left: 22px;
+}
+
+.menu-link {
+    display: block;
+    padding: 7px 12px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+  
+.menu-link.active,
+.menu-link:hover {
+    background-color: #232324;
+}
+
 .welcome {
     background-color: #eb4f4e;
 }
 
-.welcom-inner {
+.welcome-inner {
     height: 635px;
 }
 
