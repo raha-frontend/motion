@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./slider/css/lightslider.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Motion</title>
 </head>
@@ -37,7 +38,22 @@
     </div>
 
     <div class="welcome">
-        <div class="container welcome-inner"></div>
+        <div class="container welcome-inner">
+            <ul class="welcome-slider">
+                <li class="welcome-slider-item">
+                    <h1>Welcome to Motion</h1>
+                    <p>Asmart & Creative Single Page Template</p>
+                    <img src="./images/welcome-image1.png" alt="welcome-image1">
+                </li>
+                <li class="welcome-slider-item">
+                    <h1>Welcome to Motion2</h1>
+                    <p>Asmart & Creative Single Page Template</p>
+                    <img src="./images/welcome-image1.png" alt="welcome-image1">
+                </li>
+            </ul>
+            <button class="welcome-arrow welcome-prev"></button>
+            <button class="welcome-arrow welcome-next"></button>
+        </div>
     </div>
 
     <div class="smart-creative">
@@ -61,7 +77,27 @@
     </div>
 
     <div class="copyright">
-        <div class="container copyright-inner"></div>
+        <div class="container copyright-inner">
+            <p>© 2013 <a href="index.html" class="copyright-link">Motion Template.</a> Design by Begha</p>
+
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="#" class="social-link">
+                        <img class="social-image" src="./images/face.jpg" alt="face">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-link">
+                        <img class="social-image" src="./images/tw.jpg" alt="tw">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-link">
+                        <img class="social-image" src="./images/rss.jpg" alt="rss">
+                    </a>
+                </li>
+            </ul> 
+        </div>
     </div>
 
     <div class="contacts">
@@ -72,5 +108,36 @@
             <p>Your address goes here</p>
         </div>
     </div>
+
+    <!-- подключаю jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- подключил скрипт слайдера -->
+    <script src="./slider/js/lightslider.min.js"></script>
+    <!-- наш скрпит активации слайдера -->
+    <script>
+        // ждем загрузки документов
+        $(document).ready(function() {
+            // создаем переменную слайдера и активируем его с нужными настройками
+          var welcomeSlider = $(".welcome-slider").lightSlider({
+              item: 1,
+              pager: false,
+              loop: true,
+              auto: true,
+              pause: 5000,
+              controls: false
+          }); 
+
+          // клик по кнопке стрелки назад
+          $(".welcome-prev").on('click', function() {
+              // активтруем функцию, которая переключает слайдер назад
+            welcomeSlider.goToPrevSlide(); 
+          });
+          // клик по кнопке стрелки вперед
+          $(".welcome-next").on('click', function() {
+              // активтруем функцию, которая переключает слайдер вперед
+            welcomeSlider.goToNextSlide(); 
+          });
+        });
+    </script>
 </body>
 </html>
