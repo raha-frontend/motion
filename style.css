@@ -122,7 +122,50 @@ body {
 }
 
 .smart-creative-inner {
-    height: 369px;
+   text-align: center; 
+   padding-top: 38px;
+   padding-bottom: 23px;
+}
+
+.smart-creative-title {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 9px;
+}
+
+.smart-creative-description {
+    font-size: 20px;
+    color: #d94948;
+    margin-bottom: 38px;
+}
+
+.smart-creative-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.smart-creative-item {
+    width: 250px;
+}
+
+.smart-creative-item img {
+    margin-bottom: 15px;
+}
+
+.smart-creative-item h3 {
+    font-size: 30px;
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.smart-creative-item p {
+    font-size: 18px;
+    color: #e74c3c;
+    line-height: 21px;
 }
 
 .talented {
@@ -130,8 +173,95 @@ body {
 }
 
 .talented-inner {
-    height: 515px;
+    text-align: center;
+    padding-top: 37px;
+    padding-bottom: 25px;
 }
+
+.talented-title {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 9px;
+}
+
+.talanted-description {
+    font-size: 20px;
+    color: #232324;
+    margin-bottom: 35px;
+    line-height: 24px;
+}
+
+.talented-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.talented-item {
+    width: 226px;
+    background-color: #fff;
+    padding: 25px 10px 12px;
+    border-radius: 5px;
+}
+  
+
+.talented-img-wrapper {
+    margin-bottom: 18px;
+    border-radius: 50%;
+    border: 10px solid #6cc372;
+    width: 164px;
+    height: 164px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.talented-img-wrapper::before {
+    content: "";
+    width: 117px;
+    height: 122px;
+    background-image: url(./images/highlight.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.talented-img {
+    display: block;
+}
+  
+
+.talented-name {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #61af66;
+}
+
+.talented-position {
+    margin-bottom: 21px;
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+.talented-link {
+    display: block;
+    width: 100%;
+    background-color: #6cc372;
+    text-align: left;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    padding: 9px 0 9px 65px;
+    line-height: 25px;
+    background-image: url(./images/twitter-icon.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    border-radius: 3px;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+}
+  
 
 .elegant {
     background-color: #f0f0f0;
