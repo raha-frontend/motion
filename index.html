@@ -128,7 +128,53 @@
     </div>
 
     <div class="elegant">
-        <div class="container elegant-inner"></div>
+        <div class="container elegant-inner">
+            <h2 class="elegant-title">Elegant & Genuine</h2>
+            <p class="elegant-description">This is how our works looks like :)</p>
+            <ul class="elegant-list">
+                <li class="elegant-item">
+                    <img src="./images/sms-clouds.jpg" alt="sms-clouds" class="elegant-img">
+                    <h3 class="elegant-name">SMS Clouds</h3>
+                </li>
+
+                <li class="elegant-item">
+                    <img src="./images/apple-soft.jpg" alt="apple-soft" class="elegant-img">
+                    <h3 class="elegant-name">Blue Apple Soft</h3>
+                </li>
+
+                <li class="elegant-item">
+                    <img src="./images/together-application.jpg" alt="together-application" class="elegant-img">
+                    <h3 class="elegant-name">Together Application</h3>
+                </li>
+
+                <li class="elegant-item">
+                    <img src="./images/fc-barcelona.jpg" alt="fc-barcelona" class="elegant-img">
+                    <h3 class="elegant-name">FCBarcelona Club</h3>
+                </li>
+
+                <li class="elegant-item">
+                    <img src="./images/sms-clouds.jpg" alt="sms-clouds" class="elegant-img">
+                    <h3 class="elegant-name">SMS Clouds</h3>
+                </li>
+
+                <li class="elegant-item">
+                    <img src="./images/apple-soft.jpg" alt="apple-soft" class="elegant-img">
+                    <h3 class="elegant-name">Blue Apple Soft</h3>
+                </li>
+
+                <li class="elegant-item">
+                    <img src="./images/together-application.jpg" alt="together-application" class="elegant-img">
+                    <h3 class="elegant-name">Together Application</h3>
+                </li>
+
+                <li class="elegant-item">
+                    <img src="./images/fc-barcelona.jpg" alt="fc-barcelona" class="elegant-img">
+                    <h3 class="elegant-name">FCBarcelona Club</h3>
+                </li>
+            </ul>
+            <button class="elegant-arrow elegant-prev"></button>
+            <button class="elegant-arrow elegant-next"></button>
+        </div>
     </div>
 
     <div class="tarife">
@@ -136,7 +182,54 @@
     </div>
 
     <div class="tweets">
-        <div class="container tweets-inner"></div>
+        <div class="container tweets-inner">
+            <h2 class="tweets-title">Latest Tweets</h2>
+            <p class="tweets-description">This is how to keep in touch :)</p>
+            <ul class="tweets-slider">
+                <li class="tweets-item">
+                    <p class="tweets-text">
+                        @ Abd-Alrahaman Elgazzar 
+                        <a href="#">Great work Abd-Alrahaman , I really love the 
+                            application  ... hope you haveall the luck in ur life ..  also have alook here
+                        </a> http://t.co/zfdgfdg 
+                    </p>
+                </li>
+                <li class="tweets-item">
+                    <p class="tweets-text">
+                        @ Abd-Alrahaman Elgazzar 
+                        <a href="#">Great work Abd-Alrahaman , I really love the 
+                            application  ... hope you haveall the luck in ur life ..  also have alook here
+                        </a> http://t.co/zfdgfdg 
+                    </p>
+                </li>
+                <li class="tweets-item">
+                    <p class="tweets-text">
+                        @ Abd-Alrahaman Elgazzar 
+                        <a href="#">Great work Abd-Alrahaman , I really love the 
+                            application  ... hope you haveall the luck in ur life ..  also have alook here
+                        </a> http://t.co/zfdgfdg 
+                    </p>
+                </li>
+                <li class="tweets-item">
+                    <p class="tweets-text">
+                        @ Abd-Alrahaman Elgazzar 
+                        <a href="#">Great work Abd-Alrahaman , I really love the 
+                            application  ... hope you haveall the luck in ur life ..  also have alook here
+                        </a> http://t.co/zfdgfdg 
+                    </p>
+                </li>
+                <li class="tweets-item">
+                    <p class="tweets-text">
+                        @ Abd-Alrahaman Elgazzar 
+                        <a href="#">Great work Abd-Alrahaman , I really love the 
+                            application  ... hope you haveall the luck in ur life ..  also have alook here
+                        </a> http://t.co/zfdgfdg 
+                    </p>
+                </li>
+            </ul>
+            <button class="tweets-arrow tweets-prev"></button>
+            <button class="tweets-arrow tweets-next"></button>
+        </div>
     </div>
 
     <div class="copyright">
@@ -199,6 +292,39 @@
           $(".welcome-next").on('click', function() {
               // активтруем функцию, которая переключает слайдер вперед
             welcomeSlider.goToNextSlide(); 
+          });
+
+          // слайдер элегант
+          var elegantSlider = $(".elegant-list").lightSlider({
+              item: 4,
+              controls: false
+          });
+          // клик по кнопке стрелки назад
+          $(".elegant-prev").on('click', function() {
+              // активтруем функцию, которая переключает слайдер назад
+            elegantSlider.goToPrevSlide(); 
+          });
+          // клик по кнопке стрелки вперед
+          $(".elegant-next").on('click', function() {
+              // активтруем функцию, которая переключает слайдер вперед
+            elegantSlider.goToNextSlide(); 
+          });
+
+          //слайдер твитс
+          var tweetsSlider = $(".tweets-slider").lightSlider({
+              item: 1,
+              controls: false,
+              pager: false
+          });
+          // клик по кнопке стрелки назад
+          $(".tweets-prev").on('click', function() {
+              // активтруем функцию, которая переключает слайдер назад
+            tweetsSlider.goToPrevSlide(); 
+          });
+          // клик по кнопке стрелки вперед
+          $(".tweets-next").on('click', function() {
+              // активтруем функцию, которая переключает слайдер вперед
+            tweetsSlider.goToNextSlide(); 
           });
         });
     </script>
