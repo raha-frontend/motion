@@ -15,7 +15,6 @@ body {
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
-    outline: 1px solid #fff;
 }
 
 .main-header {
@@ -235,7 +234,7 @@ body {
 
 .talented-name {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 20px;
     color: #61af66;
 }
 
@@ -335,10 +334,130 @@ body {
 
 .tarife {
     background-color: #fff;
+    padding-bottom: 28px;
 }
 
 .tarife-inner {
-    height: 373px;
+    text-align: center;
+}
+
+.tarife-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.tarife-text {
+    font-size: 20px;
+    color: #eb4f4e;
+}
+
+.tatife-item {
+    width: 300px;
+    background-color: #fff;
+    padding-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: -111px;
+}
+
+.tarife-name {
+    font-size: 40px;
+    color: #616161;
+    margin-bottom: 10px;
+}
+
+.tarife-description {
+    font-size: 20px;
+    color: #eb4f4e;
+    margin-bottom: 22px;
+}
+
+.tarife-options {
+    list-style: none;
+    background-color: #f0f0f0;
+}
+
+.tarife-option {
+    font-size: 18px;
+    color: #616161;
+    line-height: 49px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.tarife-bottom {
+    display: flex;
+    justify-content: space-between;
+    background-color: #616161;
+    padding: 10px;
+    align-items: center;
+}
+
+.tarife-price {
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    padding-left: 24px;
+}
+
+.tarife-price span {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.tarife-price::before {
+    content: "";
+    position: absolute;
+    background-image: url(./images/dollar.png);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 27px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tarife-order {
+    width: 93px;
+    height: 33px;
+    font-size: 21px;
+    color: #616161;
+    border-radius: 2px;
+    border: none;
+}
+
+.tatife-item-standard {
+    margin-top: -132px;
+}
+
+.tatife-item-standard .tarife-name {
+    color: #eb4f4e;
+}
+
+.tatife-item-standard .tarife-description {
+    color: #232324;
+}
+
+.tatife-item-standard .tarife-bottom {
+    background-color: #eb4f4e;
+}
+
+.tatife-item-standard .tarife-options {
+    position: relative;
+}
+
+.tatife-item-standard .tarife-options::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 31px;
+    background-image: url(./images/standard-icon.png);
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -16px;
 }
 
 .tweets {
